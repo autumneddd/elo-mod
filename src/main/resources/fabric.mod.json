@@ -1,0 +1,23 @@
+{
+	"schemaVersion": 1,
+	"id": "elo",
+	"version": "${version}",
+	"name": "Elo",
+	"description": "PvP Elo ratings shown in nametags and the tab list.",
+	"authors": [
+		"autumneddd"
+	],
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.autumneddd.elo.EloMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
