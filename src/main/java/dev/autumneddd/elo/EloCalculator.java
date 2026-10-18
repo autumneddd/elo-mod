@@ -7,7 +7,7 @@ package dev.autumneddd.elo;
  * change   = K * (score - expected)
  */
 public final class EloCalculator {
-	public static final double K_FACTOR = 20.0;
+	public static final double K_FACTOR = 32.0;
 
 	private EloCalculator() {
 	}

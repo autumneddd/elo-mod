@@ -7,7 +7,7 @@ A Fabric server-side Minecraft mod for version 1.21.11 that implements an Elo ra
 - **Base Elo:** Every player starts at **1000** Elo.
 - **PvP Only:** Elo is only updated on player-versus-player kills (including projectile hits and fall/hazard damage credited to an attacker).
 - **No Natural Cause Penalties:** Deaths to fall damage, fire/lava, mobs, drowning, `/kill`, or suicide cause no Elo loss.
-- **Omni Calculator Formula:** Rating adjustments match the [Omni Elo Calculator](https://www.omnicalculator.com/sports/elo) using $K = 20$:
+- **Omni Calculator Formula:** Rating adjustments match the [Omni Elo Calculator](https://www.omnicalculator.com/sports/elo) using $K = 32$:
   $$\text{expected} = \frac{1}{10^{(\text{opponent} - \text{player})/400} + 1}$$
   $$\Delta\text{Elo} = K \times (\text{score} - \text{expected})$$
   Ratings are rounded to one decimal place internally.
@@ -30,4 +30,4 @@ A Fabric server-side Minecraft mod for version 1.21.11 that implements an Elo ra
 ./gradlew build
 ```
 
-The compiled jar will be at `build/libs/elo-1.0.0.jar`.
+The compiled jar will be at `build/libs/elo-1.0.1.jar`.
